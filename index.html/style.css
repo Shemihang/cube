@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    /* padding: non; */
+}
+.hello ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+.hello ul li a{
+  font-size: 28px;  
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: 0.3 all;
+}
+.hello ul li a:hover{
+    color: rgb(199, 209, 199);
+}
+.hover-line::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height:2px;
+    background-color: rgb(179, 199, 179);
+    transition: width .3;
+}
+.hover-line:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+
+
+
+
